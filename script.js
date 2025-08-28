@@ -25,7 +25,8 @@ async function data() {
 }, 8000);
  setTimeout(() => {
     function lo() {
-        text = document.createElement("p");
+        
+        let text = document.createElement("p");
         text.innerHTML = "USAMA WAIT KR LIYE ZARA HO RHA HY LOAD";
         document.body.appendChild(text);
         text.style.fontSize = "30px"; 

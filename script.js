@@ -20,17 +20,25 @@ async function data() {
  setTimeout(() => {
     function done() {
     data();
+    const load = document.querySelector(".op");
+    load.style.display = "none";
     }
     done();
-}, 8000);
+}, 4000
+);
+
+
  setTimeout(() => {
     function lo() {
-        
-        let text = document.createElement("p");
+        const text = document.createElement("p");
+        text.classList.add("op");
         text.innerHTML = "USAMA WAIT KR LIYE ZARA HO RHA HY LOAD";
         document.body.appendChild(text);
         text.style.fontSize = "30px"; 
     text.style.color = "red";
     text.style.textAlign = "center";}
     lo();
-}, 1000);
+ 
+}, 1000
+);
+

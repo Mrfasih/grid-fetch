@@ -22,4 +22,14 @@ async function data() {
     data();
     }
     done();
-}, 5000);
+}, 8000);
+ setTimeout(() => {
+    function lo() {
+        text = document.createElement("p");
+        text.innerHTML = "USAMA WAIT KR LIYE ZARA HO RHA HY LOAD";
+        document.body.appendChild(text);
+        text.style.fontSize = "30px"; 
+    text.style.color = "red";
+    text.style.textAlign = "center";}
+    lo();
+}, 1000);

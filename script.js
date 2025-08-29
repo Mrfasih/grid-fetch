@@ -22,6 +22,8 @@ async function data() {
     data();
     const load = document.querySelector(".op");
     load.style.display = "none";
+    const img = document.querySelector(".o");
+    img.style.display = "none";
     }
     done();
 }, 4000
@@ -30,13 +32,23 @@ async function data() {
 
  setTimeout(() => {
     function lo() {
+      const img = document.createElement("img");
+        img.src = "img/okok.png";
+        img.classList.add("o");
+        document.body.appendChild(img);
+        img.style.width = "100%";
+        img.style.maxWidth = "800px";
+        img.style.height = "600px";
+        img.style.alignContent ="center";
         const text = document.createElement("p");
         text.classList.add("op");
-        text.innerHTML = "USAMA WAIT KR LIYE ZARA HO RHA HY LOAD";
+        text.innerHTML = "May WAIT Kar rha hoon";
         document.body.appendChild(text);
         text.style.fontSize = "30px"; 
-    text.style.color = "red";
-    text.style.textAlign = "center";}
+    text.style.color = "black";
+    text.style.fontWeight = "bold";
+    text.styele.fontSize ="100px";
+    text.style.textDecoration = "underline";}
     lo();
  
 }, 1000
